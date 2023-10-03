@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calcolatore Prezzo Palestra</title>
+</head>
+<body>
+    <h1>Calcolatore Prezzo Palestra</h1>
+    <form method="post" action="palestra.php">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required><br><br>
+
+        <label for="eta">Eta':</label>
+        <input type="number" name="eta" required><br><br>
+
+        <label for="frequenza">Frequenza di pagamento:</label>
+        <select name="frequenza" required>
+            <option value="mensile">Mensile</option>
+            <option value="bimestrale">Bimestrale</option>
+            <option value="trimestrale">Trimestrale</option>
+            <option value="annuale">Annuale</option>
+        </select><br><br>
+
+        <input type="submit" name="calcola" value="Calcola Prezzo Annuale">
+    </form>
+</body>
+</html>
+

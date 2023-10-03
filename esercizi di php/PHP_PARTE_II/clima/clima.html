@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrazione Dati Meteorologici</title>
+</head>
+<body>
+    <h1>Inserisci i dati meteorologici</h1>
+    <form action="clima.php" method="post">
+        <label for="localita">Località:</label>
+        <input type="text" name="localita" required><br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" name="data" required><br><br>
+
+        <label for="ora">Ora:</label>
+        <input type="time" name="ora" required><br><br>
+
+        <label>Tipo Rivelazione:</label>
+        <input type="radio" name="tipo_rivelazione" value="OFC" required> OFC
+        <input type="radio" name="tipo_rivelazione" value="AMB" required> AMB
+        <input type="radio" name="tipo_rivelazione" value="DCA" required> DCA<br><br>
+
+        <label for="umidita">Umidità:</label>
+        <select name="umidita" required>
+            <option value="assoluto">Assoluto</option>
+            <option value="relativo">Relativo</option>
+        </select><br><br>
+
+        <label for="clima">Clima:</label>
+        <select name="clima" required>
+            <option value="pioggia">Pioggia</option>
+            <option value="sereno">Sereno</option>
+            <option value="nuvoloso">Nuvoloso</option>
+            <option value="nebbia">Nebbia</option>
+        </select><br><br>
+
+        <label for="altitudine">Altitudine:</label>
+        <input type="number" name="altitudine" required><br><br>
+
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>

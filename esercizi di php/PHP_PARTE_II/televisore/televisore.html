@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configurazione del Televisore</title>
+</head>
+<body>
+    <h1>Configurazione del Televisore</h1>
+    <form method="POST" action="televisore.php">
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" required><br>
+
+        <label for="modello">Modello:</label>
+        <input type="text" name="modello" required><br>
+
+        <label for="porte_hdmi">Numero di Porte HDMI:</label>
+        <input type="number" name="porte_hdmi" required><br>
+
+        <label for="refresh_rate">Refresh Rate (Hz):</label>
+        <input type="number" name="refresh_rate" required><br>
+
+        <label for="risoluzione">Risoluzione:</label>
+        <select name="risoluzione" required>
+            <option value="HD Ready">HD Ready</option>
+            <option value="Full HD">Full HD</option>
+            <option value="Ultra HD">Ultra HD</option>
+            <option value="4K">4K</option>
+        </select><br>
+
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
